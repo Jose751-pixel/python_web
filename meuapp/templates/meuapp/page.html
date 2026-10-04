@@ -5,7 +5,10 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Bem-vindo à minha página!</h1>
-    <p>Esta é a minha primeira página em Django!</p>
+    {% extends 'meuapp/base.html' %}
+
+     {% block content %}
+       <p>Este é o conteúdo da minha página.</p>
+     {% endblock %}
 </body>
 </html>
