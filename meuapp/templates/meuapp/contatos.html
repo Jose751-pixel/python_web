@@ -1,0 +1,21 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos</title>
+</head>
+<body>
+    {% extends 'meuapp/base.html' %}
+
+     {% block content %}
+         <h2>Lista de Contatos</h2>
+         <ul>
+              {% for contato in contatos %}
+                <li>{{ contato }}/li>
+              {% empty %}
+                <li>Nenhum contato encontrado.</li>
+              {% endfor %}
+         </ul>
+     {% endblock %}
+</body>
+</html>
